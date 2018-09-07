@@ -213,7 +213,7 @@ and after."
 (defun julia-repl-macroexpand ()
   "Same as SEND-REGION-OR-LINE, but wrapped in a macroexpand."
   (interactive)
-  (julia-repl-send-region-or-line "macroexpand(quote " " end)"))
+  (julia-repl-send-region-or-line "@macroexpand " ""))
 
 (defun julia-repl-send-buffer (arg)
   "Send the contents of the current buffer to the Julia REPL term
